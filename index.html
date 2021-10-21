@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <title>NLW Heat</title>
+
 </head>
 
 <body>
@@ -34,7 +35,7 @@
 
       <!-- Text Area -->
       <div class="text-area">
-        <h1>Yuri Correa</h1>
+        <h1 id="userName">Yuri Correa</h1>
         <a class="github-link" href="https://github.com/Bujira">
           <img src="./images/github.svg" alt="Ícone GitHub">
           yurifcorrea
@@ -43,24 +44,24 @@
       </div>
 
       <!-- Social Media Icons -->
-      <ul>
-        <li>
+      <ul id="socialLinks">
+        <li class="youtube">
           <a href="https://www.youtube.com/channel/UCqwEBs6BdYYdWhkRKjpfQmQ" target="_blank">
             <img src="./images/youtube.svg" alt="Ícone YouTube">
           </a>
         </li>
-        <li>
+        <li class="instagram">
           <a href="https://www.instagram.com/yurifcorrea/" target="_blank">
             <img src="./images/instagram.svg" alt="Ícone Instagram">
           </a>
         </li>
-        <li>
+        <li class="facebook">
           <a href="https://www.facebook.com/yurifcorrea/" target="_blank">
             <img src="./images/facebook.svg" alt="Ícone Facebook">
           </a>
         </li>
-        <li>
-          <a href="#" target="_blank">
+        <li class="twitter">
+          <a href="https://www.twitter.com/maykbrito" target="_blank">
             <img src="./images/twitter.svg" alt="Ícone Twitter">
           </a>
         </li>
@@ -69,6 +70,28 @@
     </div>
 
   </main>
+
+  <script>
+
+
+    const linksSocialMedia = {
+      github: "Bujira",
+      YouTube: "channel/UCqwEBs6BdYYdWhkRKjpfQmQ",
+      instagram: "yurifcorrea",
+      facebook: "yurifcorrea",
+      twitter: "maykbrito"
+    };
+
+    function changeSocialMediaLinks() {
+      for (let li of socialLinks.children) {
+        const social = li.getAttribute("class");
+        li.children[0].href = ``;
+      }
+    }
+
+    // changeSocialMediaLinks();
+
+  </script>
 
 </body>
 
