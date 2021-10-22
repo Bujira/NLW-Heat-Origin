@@ -30,17 +30,17 @@
         <span>
           <img src="./images/selo.svg" alt="Selo Rocketseat">
         </span>
-        <img src="./images/yuri.jpg" alt="Foto pessoal">
+        <img id="userAvatar" src="https://source.unsplash.com/random/300x300" alt="Foto pessoal">
       </div>
 
       <!-- Text Area -->
       <div class="text-area">
         <h1 id="userName">Yuri Correa</h1>
-        <a class="github-link" href="https://github.com/Bujira" target="_blank">
+        <a id="userLink" class="github-link" href="https://github.com/" target="_blank">
           <img src="./images/github.svg" alt="Ícone GitHub">
-          yurifcorrea
+          <span id="userUrlName">name</span>
         </a>
-        <p>An instructor focused on helping pople start programming for web</p>
+        <p id="userBio">An instructor focused on helping pople start programming for web</p>
       </div>
 
       <!-- Social Media Icons -->
@@ -71,28 +71,7 @@
 
   </main>
 
-  <script>
-
-
-    const linksSocialMedia = {
-      github: "Bujira",
-      youtube: "channel/UCqwEBs6BdYYdWhkRKjpfQmQ",
-      instagram: "yurifcorrea",
-      facebook: "yurifcorrea",
-      twitter: "maykbrito"
-    };
-
-    function changeSocialMediaLinks() {
-      for (let li of socialLinks.children) {
-        const socialMediaName = li.getAttribute("class");
-        li.children[0].href = `https://www.${socialMediaName}.com/${linksSocialMedia[socialMediaName]}`;
-      }
-    }
-
-    changeSocialMediaLinks();
-
-  </script>
-
+  <script type="text/javascript" src="./main.js"></script>
 </body>
 
 </html>
